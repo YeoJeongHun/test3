@@ -11,41 +11,41 @@ public class main {
 		add_content[] text = new add_content[100];
 
 		while (true) {
-			System.out.println("1 : Á¾·á");
-			System.out.println("2 : °Ô½Ã¹° Ãß°¡");
-			System.out.println("3 : °Ô½Ã¹° ³»¿ë º¸±â");
-			System.out.printf("±â´ÉÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.println("1 : ì¢…ë£Œ");
+			System.out.println("2 : ê²Œì‹œë¬¼ ì¶”ê°€");
+			System.out.println("3 : ê²Œì‹œë¬¼ ë‚´ìš© ë³´ê¸°");
+			System.out.printf("ê¸°ëŠ¥ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 			command = sc.nextInt();
 
 			if (command == 1) {
-				System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+				System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 				break;
 			}
 			else if (command == 2) {
 				text[idx] = new add_content();
-				System.out.println("Á¦¸ñ : ");
+				System.out.println("ì œëª© : ");
 				text[idx].setObj(sc.next());
-				System.out.println("³»¿ë : ");
+				System.out.println("ë‚´ìš© : ");
 				text[idx].setContent(sc.next());
 
-				System.out.println("°Ô½Ã¹° µî·ÏµÇ¾ú½À´Ï´Ù.");
+				System.out.println("ê²Œì‹œë¬¼ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤.");
 				text[idx].setIdx(idx);
 				idx++;
 				if (idx >= 100) {
-					System.out.println("´õÀÌ»ó °Ô½Ã±ÛÀ» µî·ÏÇÒ ¼ö ¾ø½À´Ï´Ù.");
+					System.out.println("ë”ì´ìƒ ê²Œì‹œê¸€ì„ ë“±ë¡í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 				}
 			}
 			else if (command == 3) {
 				for (int i = 0; i < idx; i++) {
-					System.out.printf("%d¹ø±Û - Á¦¸ñ : %s\n", text[i].getIdx(), text[i].getObj());
+					System.out.printf("%dë²ˆê¸€ - ì œëª© : %s\n", text[i].getIdx(), text[i].getObj());
 					System.out.println("=================================");
 				}
-				System.out.printf("±Û ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+				System.out.printf("ê¸€ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 				searchIdx=sc.nextInt();
-				System.out.printf("Á¦¸ñ : %s\n³»¿ë : %s\n",text[searchIdx].getObj(),text[searchIdx].getContent());
+				System.out.printf("ì œëª© : %s\në‚´ìš© : %s\n",text[searchIdx].getObj(),text[searchIdx].getContent());
 				System.out.println("============================");
 			}
-			else System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+			else System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤.!!");
 
 		}
 	}
