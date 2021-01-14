@@ -45,7 +45,7 @@ public class main {
 				System.out.printf("제목 : %s\n내용 : %s\n",text[searchIdx].getObj(),text[searchIdx].getContent());
 				System.out.println("============================");
 			}
-			else System.out.println("잘못된 입력입니다.");
+			else System.out.println("잘못된 입력입니다.!!!");
 
 		}
 	}
